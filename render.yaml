@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: voila-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: voila prueba.ipynb --port 10000 --no-browser --Voila.ip=0.0.0.0
